@@ -1,6 +1,7 @@
 const express = require("express");
 const { chats } = require("./data/data");
-const dotenv = require("dotenv").config();
+const dotenv = require("dotenv");
+dotenv.config();
 const app = express();
 app.get("/", (req, res) => {
   res.send("Hello");
